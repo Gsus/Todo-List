@@ -1,13 +1,25 @@
 // Check off specific todos by clicking
-$('li').click(function(){
+$('ul').on('click', 'li', function(){
   $(this).toggleClass('completed');
 });
 
 // Click on X to delete Todo
-$('span').click(function(e){
+$('ul').on('click', 'span', function(e){
   $(this).parent().fadeOut(500, function(){
     $(this).remove();
   });
   // jQuery Method to stop Event Bubbling
   e.stopPropagation();
+});
+
+// Add Todos
+$("input[type='text']").on('keypress', function(e){
+  if (e.which === 13) {    
+    // Grab text
+    let todoText = $(this).val();
+    // Reset input
+    $(this).val("");
+    // Add to ul
+    $('ul').append(`<li><span>X</span> ${todoText}</li>`);
+  }
 });
