@@ -20,6 +20,6 @@ $("input[type='text']").on('keypress', function(e){
     // Reset input
     $(this).val("");
     // Add to ul
-    $('ul').append(`<li><span>X</span> ${todoText}</li>`);
+    $('ul').append(`<li><span><i class="fas fa-trash"></i></span> ${todoText}</li>`);
   }
 });
