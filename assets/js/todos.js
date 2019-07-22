@@ -20,13 +20,6 @@ $("input[type='text']").on('keypress', function(e){
     // Reset input
     $(this).val("");
     // Add to ul
-    $('ul').append(`<li><span><i class="fas fa-trash"></i></span>${todoText}</li>`);
+    $('ul').append(`<li><span><i class="fas fa-trash"></i></span> ${todoText}</li>`);
   }
-});
-
-$(".fa-plus").on('click', function(){
-  // Fade in and out, and in case of fading in, focus as well.
-  $("input[type='text']").fadeToggle(function(){
-    $("input[type='text']").focus();
-  });
 });

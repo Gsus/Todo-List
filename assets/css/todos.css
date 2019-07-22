@@ -18,11 +18,7 @@ h1 {
   font-weight: normal;
 }
 
-h1 i {
-  margin-right: 10px; 
-}
-
-h1 i:nth-of-type(2) {
+.fa-plus {
   float: right;
 }
 
