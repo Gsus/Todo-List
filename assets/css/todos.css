@@ -27,14 +27,15 @@ h1 i:nth-of-type(2) {
 }
 
 ul {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: table;
 }
 
 li {
   background: white;
-  height: 40px;
   line-height: 40px;
   color: #666;
 }
@@ -77,9 +78,9 @@ input:focus {
 
 #container {
   background: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   margin: 100px auto;
-  width: 360px;
+  width: 40%;
 }
 
 .completed {
